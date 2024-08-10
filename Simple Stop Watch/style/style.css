@@ -1,0 +1,78 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+.main_container{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #222;
+}
+.main_container .StopWatch{
+    width: 50%;
+    height: 50%;
+    /* border: 1px solid orange; */
+    box-shadow: 2px 2px 5px 2px white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.main_container .StopWatch .time ,.main_container .StopWatch .set{
+    width: 100%;
+    height: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+ 
+}
+.main_container .StopWatch .time .same_time,.main_container .StopWatch .set .same_set {
+    width: 30%;
+    height: 100%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+}
+.main_container .StopWatch .time .same_time p{
+    font-size: 35px;
+    color: white;
+   font-weight: 900;
+}
+.main_container .StopWatch .set .same_set button{
+    width: 50%;
+    height: 30%;
+    background-color: green;
+    border: none;
+    border-radius: 10px;
+    font-size: 20px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+.main_container .StopWatch .set .same_set #Start{
+    background-color: blue;
+}
+.main_container .StopWatch .set .same_set #Start:hover{
+    background-color: transparent ;
+    border: 1px solid blue;
+}
+.main_container .StopWatch .set .same_set #pouse{
+    background-color: red;
+}
+.main_container .StopWatch .set .same_set #pouse:hover{
+    background-color: transparent ;
+    border: 1px solid red;
+}
+.main_container .StopWatch .set .same_set button:hover{
+    background-color: transparent;
+    border: 1px solid green;
+    color: white;
+}

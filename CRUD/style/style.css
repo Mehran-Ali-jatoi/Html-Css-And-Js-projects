@@ -1,0 +1,137 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.container{
+    width: 100vw;
+    height: 100vh;
+    background-color: rgb(3, 12, 63);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.container .CRUD_main{
+    width: 50%;
+    height: 70%;
+    /* background-color: orange; */
+    margin: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.container .CRUD_main .top{
+    width: 100%;
+    height: 40%;
+  
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.container .CRUD_main .top input{
+    width: 40%;
+    height: 25%;
+    border-radius: 10px;
+    border: 1px solid white;
+    color: white;
+    background-color: transparent;
+    padding: 10px;
+}
+.container .CRUD_main .top input::placeholder{
+    color: white;
+}
+.container .CRUD_main .top button{
+    width: 10%;
+    height: 25%;
+    margin: 15px;
+    border-radius: 10px;
+    cursor: pointer;
+    background-color: transparent;
+    border: 1px solid white;
+    color: white;
+    transition: 0.5s;
+    font-size: 20px;
+}
+.container .CRUD_main .top button:hover{
+    background-color: blue;
+    border: none;
+}
+.container .CRUD_main .bottom{
+    width: 100%;
+    height: 60%;
+}
+.container .CRUD_main .bottom .todo{
+    width: 100%;
+    height: 20%;
+    /* background-color: orange; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container .CRUD_main .bottom .todo .left{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    padding: 10px;
+}
+.container .CRUD_main .bottom .todo .left p{
+    color: white;
+    font-size: 20px;
+}
+.container .CRUD_main .bottom .todo .right{
+    width: 20%;
+    /* background-color: white; */
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container .CRUD_main .bottom .todo .right button{
+    margin: 10px;
+    height: 50%;
+    width: 50%;
+    background-color: transparent;
+    color: white;
+    border: 1px solid white;
+   cursor: pointer;
+}
+.container .CRUD_main .bottom .todo .right .edit{
+    width: 50%;
+    height: 70%;
+    border:1px solid green;
+    color: green;
+    font-size: 20px;
+    transition: 0.5s;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.container .CRUD_main .bottom .todo .right .edit:hover{
+    background-color: green;
+    color: white;
+
+}
+.container .CRUD_main .bottom .todo .right .deleate{
+    width: 50%;
+    height: 70%;
+    padding: 10px;
+    border:1px solid red;
+    color: red;
+    font-size: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    transition: 0.5s;
+}
+.container .CRUD_main .bottom .todo .right .deleate:hover{
+    background-color: red;
+    color: white;
+}
