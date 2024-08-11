@@ -17,11 +17,11 @@ let whoein= ()=>{
     ]
     win.forEach((e)=>{
         if ((boxtext[e[0]].innerText == boxtext[e[1]].innerText) &&(boxtext[e[2]].innerText == boxtext[e[1]].innerText) &&(boxtext[e[0]].innerText !=="")) {
-            winer.classList.remove("hide")
+            winer.classList.toggle("hide")
         winer.innerText=`Congrates You Win ${boxtext[e[0]].innerText}....!`
             setTimeout(() => {
                 clear()
-                winer.classList.add("hide")
+                winer.classList.toggle("hide")
             }, 1500);
         }
     })

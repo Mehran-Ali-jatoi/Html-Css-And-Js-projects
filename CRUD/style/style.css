@@ -53,6 +53,7 @@
     border: 1px solid white;
     color: white;
     transition: 0.5s;
+    padding: 10px;
     font-size: 20px;
 }
 .container .CRUD_main .top button:hover{
@@ -70,6 +71,8 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    border: 1px solid white;
+    padding: 10px;
 }
 .container .CRUD_main .bottom .todo .left{
     width: 50%;
@@ -99,6 +102,8 @@
     color: white;
     border: 1px solid white;
    cursor: pointer;
+   padding: 10px;
+
 }
 .container .CRUD_main .bottom .todo .right .edit{
     width: 50%;
@@ -134,4 +139,18 @@
 .container .CRUD_main .bottom .todo .right .deleate:hover{
     background-color: red;
     color: white;
+}
+
+@media screen And (max-width:1000px) {
+    body{
+        background-color: orange;
+    }
+   
+    .container .CRUD_main .top button{
+        width: 25%;    }
+        .container .CRUD_main .bottom .todo .right button{
+            width: 100% !important;
+            height: 50% !important;
+        }
+
 }

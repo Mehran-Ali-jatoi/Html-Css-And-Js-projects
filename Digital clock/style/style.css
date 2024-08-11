@@ -49,3 +49,14 @@
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-weight: 500;
 }
+@media screen And (max-width:900px){
+    .container h1{
+        font-size: 30px;
+    }
+    .container .clock div{
+        margin: 10px;
+    }
+    .container .clock{
+        padding: 20px;
+    }
+}

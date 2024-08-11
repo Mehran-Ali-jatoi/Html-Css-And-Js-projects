@@ -3,7 +3,7 @@ let todo = document.querySelector("#todo")
 
 
 item.addEventListener("keyup",(e)=>{
-    if (e.key =="Enter") {
+    if ((e.key =="Enter") &&(item.value !=="")) {
         adtodo(item.value)
         item.value=""
     }

@@ -125,9 +125,28 @@ body{
     color: white;
     font-size: 1.5em;
     color: rgb(133, 20, 20);
+    transform:translateX(0px);
+
 }
 
 
 .hide{
     transform:translateX(300px);
+
+    display: none;
+}
+@media screen And (max-width:1000px) {
+    body{
+        overflow: hidden !important;
+    }
+    .container .box .top h1{
+        font-size: 1.5em !important;
+        /* color: blue; */
+    }
+    .container .box .bottom .reset{
+        margin: 10px;
+    }
+    .popup{
+        width: 30% !important;
+    }
 }

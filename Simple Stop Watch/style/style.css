@@ -76,3 +76,26 @@ body{
     border: 1px solid green;
     color: white;
 }
+@media screen  And (max-width:1000px){
+    .main_container .StopWatch .time .same_time p {
+        font-size: 15px;
+        margin: 10px;
+    }
+    .main_container .StopWatch .set .same_set button {
+        width: 80%;
+        font-size: 13px;
+        padding: 10px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
+@media screen And (max-width:518px) {
+    .main_container .StopWatch .time .same_time p {
+        font-size: 10px;
+        margin: 10px;
+    }
+    .main_container .StopWatch .set .same_set button {
+        font-size: 10px;
+    }
+}

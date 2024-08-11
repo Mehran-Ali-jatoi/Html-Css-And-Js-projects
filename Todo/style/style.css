@@ -70,3 +70,8 @@
     color: black !important;
     background-color: beige !important;
 }
+@media screen  And (max-width:800px){
+    .todo{
+        padding: 10px;
+    }
+}

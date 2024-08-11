@@ -118,3 +118,34 @@ width: 100%;
     font-size: 20px;
     color: rgb(142, 242, 255);
 }
+@media screen  And (max-width:900px){
+    .container h1 {
+        font-size: 15px;
+    
+    }
+    .container .Random_Password .top .input{
+        padding: 10px;
+    }
+    .container .Random_Password .top .input input{
+        width: 60%;
+        padding: 2px;
+    }
+    .container .Random_Password .top .input input::placeholder{
+        font-size: 10px;
+    }
+    .container .Random_Password .top .input button {
+        width: 25%;
+        font-size: 10px;
+    }
+    .container .Random_Password .bottom .checks div label{
+        font-size: 20px;
+    }
+}
+@media screen  And (max-width:550px){
+    .container .Random_Password .top .input button{
+        width: 50%;
+    }
+    .container .Random_Password .top .input input{
+        width: 90%;
+    }
+}
