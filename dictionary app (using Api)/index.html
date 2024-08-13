@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dictionary</title>
+    <link rel="stylesheet" href="/style/style.css">
+</head>
+<body>
+    <div class="dictionary-container">
+        <div class="search-section">
+            <input type="text" id="search-word" placeholder="Search for a word..." />
+            <button id="search">Search</button>
+        </div>
+        <div class="word-section">
+            <h1 class="word" id="word">Example</h1>
+            <button class="audio-button" id="playaudio">🔊</button>
+            <audio id="audio" src="audio/example.mp3"></audio>
+        </div>
+        <div class="part-of-speech" id="part-of-speech">Noun</div>
+        <div class="definition">
+            <h2 id="defination">Definition</h2>
+            <p id="example">An example is a specific case or instance used to illustrate or explain a general concept or principle.</p>
+        </div>
+    
+    </div>
+    <script src="/js/main.js"></script>
+</body>
+</html>

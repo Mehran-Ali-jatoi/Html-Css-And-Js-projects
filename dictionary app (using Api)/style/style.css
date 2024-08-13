@@ -1,0 +1,95 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f9;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.dictionary-container {
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    max-width: 600px;
+    width: 100%;
+}
+
+.search-section {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.search-section input {
+    width: 70%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.search-section button {
+    padding: 10px 20px;
+    border: none;
+    background-color: #007BFF;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.word-section {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.word {
+    font-size: 2em;
+    margin: 0;
+}
+
+.audio-button {
+    background: none;
+    border: none;
+    font-size: 1.5em;
+    cursor: pointer;
+}
+
+.part-of-speech {
+    font-style: italic;
+    color: #555;
+    margin: 10px 0;
+}
+
+.definition,
+.antonyms {
+    margin: 20px 0;
+}
+
+.definition h2,
+.antonyms h2 {
+    font-size: 1.2em;
+    border-bottom: 2px solid #ccc;
+    padding-bottom: 5px;
+}
+
+.definition p,
+.antonyms ul {
+    margin: 10px 0;
+}
+
+.antonyms ul {
+    list-style: none;
+    padding: 0;
+}
+
+.antonyms li {
+    background: #e1e1e1;
+    display: inline-block;
+    margin: 5px;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
