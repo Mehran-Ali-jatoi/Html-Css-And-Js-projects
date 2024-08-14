@@ -1,0 +1,99 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    overflow-x: hidden;
+}
+.container{
+    width: 100vw;
+    height: 100vh;
+    background-color: rgb(5, 5, 66);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.container div{
+    width: 100%;
+}
+.container .top{
+    height: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container .top input{
+    width: 60%;
+    height: 70%;
+    border-radius: 10px;
+    border: 1px solid white;
+    background-color: transparent;
+    color: white;
+    padding: 10px;
+    font-size: 20px;
+    outline: none;
+    margin: 10px;
+}
+.container .top input::placeholder{
+    color: white;
+    font-size: 20px;
+}
+.container .top  button{
+    width: 25%;
+    height: 70%;
+    border: 1px solid white;
+    border-radius: 10px;
+    color: white;
+    background-color: transparent;
+    cursor: pointer;
+    transition: 0.5s;
+}
+.container .top  button:hover{
+    background-color: white;
+    color: blue;
+}
+.container .bottom{
+    min-height: 80%;
+    display: grid;
+   grid-template-columns: 25% 25% 25%;
+   grid-template-rows: repeat(3,1fr);
+   justify-content: center;
+   align-items: center;
+   overflow-y: scroll;
+   gap: 10px;
+}
+.container .bottom::-webkit-scrollbar{
+    background-color: transparent;
+    /* width: 100%; */
+    border: 1px solid white;
+    border-radius: 10px;
+}
+.container .bottom::-webkit-scrollbar-thumb{
+    background-color: white;
+    border-radius: 10px;
+    cursor:grab;
+}
+.container .bottom::-webkit-scrollbar-thumb:hover{
+    background-color: transparent;
+    border: 1px solid white;
+}
+.container .bottom div{
+    width: 100%;
+    height: 90%;
+    /* border: 1px solid white; */
+    margin-left: 10px;
+    margin-top: 10px;
+    justify-self: center;
+}
+.container .bottom div img{
+    width: 100%;
+    height: 100%;
+}
+@media screen  And (max-width:1100px){
+   
+    .container .top input,.container .top button{
+        height: 40%;
+    }
+}
